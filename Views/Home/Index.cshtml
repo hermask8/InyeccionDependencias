@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var transient = (MyObject)ViewBag.transient;
+    var scoped = (MyObject)ViewBag.scoped;
+    var singleton = (MyObject)ViewBag.singleton;
+
+
+    var transient2 = (MyObject)ViewBag.transient2;
+    var scoped2 = (MyObject)ViewBag.scoped2;
+    var singleton2 = (MyObject)ViewBag.singleton2;
+
+
+
+    var transient3 = (MyObject)ViewBag.transient3;
+    var scoped3 = (MyObject)ViewBag.scoped3;
+    var singleton3 = (MyObject)ViewBag.singleton3;
+}
+
+<div class="text-center">
+    <b>Transient 1</b> @transient.Value
+    <b>Scoped 1</b> @scoped.Value
+    <b>Singleton 1</b> @singleton.Value
+</div>
+
+
+<div class="text-center">
+    <b>Transient 2</b> @transient2.Value
+    <b>Scoped 2</b> @scoped2.Value
+    <b>Singleton 2</b> @singleton2.Value
+</div>
+
+<div class="text-center">
+    <b>Transient 3</b> @transient3.Value
+    <b>Scoped 3</b> @scoped3.Value
+    <b>Singleton 3</b> @singleton3.Value
+    <h3>Para saber la diferencia entre Transient y Scoped, habra otra ventana localhost</h3>
+</div>
